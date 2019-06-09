@@ -1,0 +1,189 @@
+::-webkit-scrollbar {
+    width: 0;
+}
+
+div#left-rail-but-its-on-the-right-side-wtf {
+    background-color: transparent;
+    z-index: 99999999;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    text-align: center;
+    overflow: hidden;
+    width: 10px;
+}
+
+#Init-PortableJSPad {
+    cursor: pointer;
+    position: fixed;
+    width: 50px;
+    height: 28.87px;
+    background-color: rgba(38, 129, 144, 0.95);
+    margin: 14.43px 0px;
+    z-index: 99999999;
+    top: 50%;
+    right: 10px;
+    display: none;
+}
+
+#Init-PortableJSPad:before, #Init-PortableJSPad:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    left: 0;
+}
+
+#Init-PortableJSPad:before {
+    bottom: 100%;
+    border-bottom: 14.43px solid rgba(38, 129, 144, 0.95);
+}
+
+#Init-PortableJSPad:after {
+    top: 100%;
+    width: 0;
+    border-top: 14.43px solid rgba(38, 129, 144, 0.95);
+}
+
+#pjsp {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center;
+}
+
+#PortableJSPad .ui-resizable-se {
+    background-image: url(//dev.wikia.com/wiki/Special:Filepath/PortableCSSPad-icons.png);
+    background-position: -49px -49px;
+    cursor: se-resize;
+    width: 12px;
+    height: 12px;
+    right: 1px;
+    bottom: 1px;
+    position: absolute;
+    font-size: 0.1px;
+}
+
+#PortableJSPad {
+    background: rgba(38, 129, 144, 0.95);
+    border-radius: 10px;
+    color: white;
+    top: 36%;
+    left: 27.5%;
+    height: fit-content;
+    width: fit-content;
+    min-height: fit-content;
+    min-width: fit-content;
+    padding: 10px;
+    position: fixed;
+    z-index: 5000102;
+    display: none;
+}
+
+#PortableJSPad-Textarea {
+    font-family: Consolas, "Courier New", "Lucida Console", monospace;
+    height: 100%;
+    min-height: 200px;
+    min-width: 300px;
+    overflow-y: scroll;
+    resize: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#PortableJSPad-Preview {
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(57, 160, 177, 0.84);
+    width: 300px;
+    box-shadow: 0 0 20px 0 rgba(57, 160, 177, 0.84);
+    color: white;
+    top: 50%;
+    height: 200px;
+    overflow: auto;
+    border: 1px solid #c3faff;
+    border-radius: 5px;
+    padding: 10px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    white-space: pre-wrap;
+}
+
+#PortableJSPad-Preview::-webkit-scrollbar {
+    width: 14px;
+}
+
+#PortableJSPad-Preview::-webkit-scrollbar-thumb {
+    background-color: #4abab7;
+}
+
+#PortableJSPad-Preview::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(30, 116, 123, 0.69);
+}
+
+#PortableJSPad-previewContent {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+#PortableJSPad .PortableJSPad-closeButton {
+    align-items: center;
+    background: #ff5e5c;
+    border-radius: 0 5px 0 0;
+    border: 1px solid #ff5e5c;
+    clear: both;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    font-size: 13px;
+    height: 20px;
+    padding: 0 5px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+#PortableJSPad .PortableJSPad-closeButton:hover {
+    background: white;
+    border: 1px solid #ff5e5c;
+    color: #ff5e5c;
+}
+
+#PortableJSPad .PortableJSPad-closeButton:active {
+    background: #ffa1a0;
+    color: white;
+}
+
+#PortableJSPad #PortableJSPad-Minimize {
+    text-align: center;
+    position: absolute;
+    right: 22px;
+    top: 0;
+    width: 10px;
+    background: #2dc7d4;
+    border-radius: 0 0 0 3px;
+    border: 1px solid #2dc7d4;
+    padding: 0 5px;
+    color: #c3faff;
+    clear: both;
+    height: 20px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+#PortableJSPad #PortableJSPad-Minimize:hover {
+    color: #00abb9;
+    background: #c3faff;
+}
+
+#PortableJSPad #PortableJSPad-Minimize:active {
+    background: #00b6c5;
+}
